@@ -30,6 +30,7 @@ public class Produto {
 
     @ManyToOne
     @JoinColumn(name = "categoria_id")
+    @JsonIgnoreProperties("produtos")
     private Categoria categoria;
 
 	public Long getId() {
